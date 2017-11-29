@@ -1,0 +1,479 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Portfolio {{ parent() }}
+{% endblock %}
+
+{% block creation %}
+  <div class="disabled col-xs-1">&#9749; Travaux</div>
+{% endblock %}
+
+
+{% block page %}
+<article id="backgroundportfolio" class="col-xs-12">
+<div class="container">
+
+  <div class="row">
+    <br/>
+    <h3>Mon code</h3>
+    <br/>
+
+     <a class="col-md-4" href="https://github.com/s7th" title="Mon adresse GitHub" target="_blank"><img class="illusite"  src="{{ asset('img/mincarousel/mincoding.jpg') }}" alt="Mon adresse GitHub"></a>
+
+     <div class="col-md-6 website">
+     <h4>Mon adresse GitHub</h4>
+     <br/>                
+     <p>Voici mon profil <a href="https://github.com/s7th" target="_blank"><img src="{{ asset('img/illustrations/github.png') }}"  alt="GitHub"/></a>GitHub où j'essaie à présent d'y tenir mes projets.</p>
+
+     </div>
+  
+
+  </div>
+
+  <br/>
+
+	<div class="row">
+    <br/>
+    <h3>Mes sites internet</h3>
+    <br/>
+
+	   <a class="col-md-4" href="http://r4id.atspace.eu/" title="Mon premier site Php" target="_blank"><img class="illusite"  src="{{ asset('img/mincarousel/minsiter4id.jpg') }}" alt="site R4ID"></a>
+
+     <div class="col-md-6 website">
+     <h4>Site communautaire</h4>
+     <br/>
+     <p>Ce site est le premier que j'ai conçu entièrement en php procédural au notepad++ et photoshop.</p>
+     <p>Il était destiné à la communauté de joueurs en ligne que j'ai créée en 2011.</p>
+     <p>Pour le moment il ne me sert que de vitrine et j'ai pour projet de l'adapter en POO sous Symfony2.</p>
+
+     </div>
+     
+
+	</div>
+
+	<br/>
+
+	<div class="row">
+
+	   <a class="col-md-4" href="http://raid.forumclan.com/forum" title="Ancien forum R4ID" target="_blank"><img class="illusite"  src="{{ asset('img/mincarousel/minforumr4id.jpg') }}" alt="Ancien forum R4ID"></a>
+
+     <div class="col-md-6 website">
+     <h4>Ancien Forum communautaire</h4>
+     <br/>
+     <p>En 2011 lorsque j'ai crée la communauté R4ID il nous fallait un endroit pour communiquer par écrit</p>
+     <p>N'ayant pas encore de connaissance suffisante en langage web à ce moment-là, je me suis tourné vers un site de forum prêt à l'emploi</p>
+     <p>Je n'ai fait qu'agencer le forum et le design avec photoshop</p>
+
+     </div>
+
+	</div>
+
+
+
+<br/>
+
+	<div class="row">
+		<br/>
+			<h3>Création de bannières et logos via Photoshop et Illustrator</h3>
+        <br/>
+				<br/>
+    <div class="col-md-4">
+      <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <img class="r4idlogo" src="{{ asset('img/mincarousel/minilogo_raid1.png') }}" alt="1th_slide">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
+        <li data-target="#myCarousel" data-slide-to="6"></li>
+        <li data-target="#myCarousel" data-slide-to="7"></li>
+        <li data-target="#myCarousel" data-slide-to="8"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <div class="img">
+          <img src="{{ asset('img/mincarousel/minlogo1.jpg') }}" alt="1th_slide">
+          </div>
+          <div class="container">
+            <div class="carousel-caption">
+              
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+          <img src="{{ asset('img/mincarousel/minlogo2.jpg') }}" alt="2th slide">
+          </div>
+          <div class="container">
+            <div class="carousel-caption">
+             
+            </div>
+          </div>
+        </div>
+        <div class="item">
+        <div class="img">
+          <img src="{{ asset('img/mincarousel/minlogo2bis.jpg') }}" alt="3th slide">
+          </div>
+          <div class="container">
+            <div class="carousel-caption">
+              
+            </div>
+          </div>
+        </div>
+
+         <div class="item">
+          <div class="img">
+          <img src="{{ asset('img/mincarousel/minlogo3.jpg') }}" alt="4th slide">
+          </div>
+          <div class="container">
+            <div class="carousel-caption">
+             
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="img">
+          <img src="{{ asset('img/mincarousel/minlogo4.jpg') }}" alt="5th slide">
+          </div>
+          <div class="container">
+            <div class="carousel-caption">
+             
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="img">
+          <img src="{{ asset('img/mincarousel/minlogo5.jpg') }}" alt="6th slide">
+          </div>
+          <div class="container">
+            <div class="carousel-caption">
+             
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="img">
+          <img src="{{ asset('img/mincarousel/minlogo6.jpg') }}" alt="7th slide">
+          </div>
+          <div class="container">
+            <div class="carousel-caption">
+             
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="img">
+          <img src="{{ asset('img/mincarousel/minlogo7.jpg') }}" alt="8th slide">
+          </div>
+          <div class="container">
+            <div class="carousel-caption">
+             
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="img">
+          <img src="{{ asset('img/mincarousel/minlogo8.jpg') }}" alt="9th slide">
+          </div>
+          <div class="container">
+            <div class="carousel-caption">
+             
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+    </div>
+ 
+    <div class="col-md-6 website">
+     <h4>Quelques logos et bannières créées pour la communauté R4ID</h4>
+     <br/>
+       <p>Créer des logos bannières background etc m'a toujours fascinés, c'est une carte d'identité graphique quelque part...</p>
+       <p>Cela donne le ton aux choses et j'aime faire transparaître mon ressenti à travers cela, un peu comme une personne qui s'habille en blouson de cuir et se dit "avec ça j'aurai l'air d'un vrai motard".</p>
+       <p>Le petit logo R4iD doré en haut à gauche du carrousel a été créé à partir d'une vingtaine de petites illustrations que l'on trouve sur le site du "battlelog". Ainsi l'on pouvait voir ce tag sur nos personnages en jeu.</p>
+    </div>
+
+</div>
+<div class="row">
+   <br/>
+	<h3>Exercices Photoshop</h3>
+   <br/>
+	<div class="col-md-4">
+      <!-- Carousel2
+    ================================================== -->
+    <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel2" data-slide-to="1"></li>
+        <li data-target="#myCarousel2" data-slide-to="2"></li>
+        <li data-target="#myCarousel2" data-slide-to="3"></li>
+        <li data-target="#myCarousel2" data-slide-to="4"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <div class="img">
+          <img src="{{ asset('img/mincarousel/minillu1.jpg') }}" alt="1th_slide">
+          </div>
+          <div class="container">
+            <div class="carousel-caption">
+              
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+          <img src="{{ asset('img/mincarousel/minillu2.jpg') }}" alt="2th slide">
+          </div>
+          <div class="container">
+            <div class="carousel-caption">
+             
+            </div>
+          </div>
+        </div>
+        <div class="item">
+        <div class="img">
+          <img src="{{ asset('img/mincarousel/minillu3.jpg') }}" alt="3th slide">
+          </div>
+          <div class="container">
+            <div class="carousel-caption">
+              
+            </div>
+          </div>
+        </div>
+
+         <div class="item">
+          <div class="img">
+          <img src="{{ asset('img/mincarousel/minillu4.jpg') }}" alt="4th slide">
+          </div>
+          <div class="container">
+            <div class="carousel-caption">
+             
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="img">
+          <img src="{{ asset('img/mincarousel/minillu5.jpg') }}" alt="5th slide">
+          </div>
+          <div class="container">
+            <div class="carousel-caption">
+             
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel2" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel2 -->
+  </div>
+
+    <div class="col-md-6 website">
+     <h4>Quelques travaux Photoshop établis lors de ma formation CNFDI</h4>
+     <br/>
+      <p>Il n'y a pas grand-chose à dire, j'ai adapté mon style personnel en prenant compte des consignes que l'on m'a données lors de ces exercices où je devais utiliser certaines options du logiciel.</p>
+    
+    </div>
+
+</div>
+<br/>
+
+<div class="row">
+<div class="col-md-4">
+<img class="animationgif" width="300" height="300" src="{{ asset('img/illustrations/Exercice_photoshop5.gif') }}" alt="1th_slide">
+</div>
+
+<div class="col-md-6 website">
+    <h4>Un travail d'animation sous Photoshop</h4>
+  <br/>
+      <p>Dans cet exercice j'ai dû créer une animation image par image comme sous flash mais avec Photoshop</p>
+      <p>Le rendu vaut ce qu'il vaut mais je me suis bien amusé à le faire.</p>
+    
+</div>
+
+</div>
+
+<br/>
+
+<div class="row">
+<br/>
+  <h3>Exercices sous Flash</h3>
+   <br/>
+<div class="col-md-4">
+<!--illustration flash 1-->
+
+			<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="550" height="400" id="Realisation1" align="middle">
+				<param name="movie" value="Realisation1.swf" />
+				<param name="quality" value="high" />
+				<param name="bgcolor" value="#000000" />
+				<param name="play" value="true" />
+				<param name="loop" value="true" />
+				<param name="wmode" value="window" />
+				<param name="scale" value="showall" />
+				<param name="menu" value="true" />
+				<param name="devicefont" value="false" />
+				<param name="salign" value="" />
+				<param name="allowScriptAccess" value="sameDomain" />
+				<!--[if !IE]>-->
+
+				<object class="illuflash " type="application/x-shockwave-flash" data= {{ asset('img/mincarousel/Realisation1.swf') }} width="300" height="300">
+					<param name="movie" value="Realisation1.swf" />
+					<param name="quality" value="high" />
+					<param name="bgcolor" value="#000000" />
+					<param name="play" value="true" />
+					<param name="loop" value="true" />
+					<param name="wmode" value="window" />
+					<param name="scale" value="showall" />
+					<param name="menu" value="true" />
+					<param name="devicefont" value="false" />
+					<param name="salign" value="" />
+					<param name="allowScriptAccess" value="sameDomain" />
+				<!--<![endif]-->
+					<a href="http://www.adobe.com/go/getflash">
+						<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Obtenir Adobe Flash Player" />
+					</a>
+				<!--[if !IE]>-->
+				</object>
+				<!--<![endif]-->
+			</object>
+		
+</div>
+
+<div class="col-md-6 website">
+    <h4>Un travail d'animation du curseur sous Flash</h4>
+    <br/>
+      <p>J'ai appris malgré la déclinaison de Flash à l'utiliser un petit peu.</p>
+      <p>Le but de cet exercice était de transformer le curseur en halo de lumière.</p>
+      <p>Si vous placez celui-ci sur le lampadaire du centre, cela lui donne l'illusion d'être allumé.</p>
+</div>
+
+</div>
+
+<br/>
+
+<div class="row">
+  <div class="col-md-4">
+<!--illustration flash 2-->
+			<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="550" height="400" id="realisation2" align="middle">
+				<param name="movie" value="realisation2.swf" />
+				<param name="quality" value="high" />
+				<param name="bgcolor" value="#000000" />
+				<param name="play" value="true" />
+				<param name="loop" value="true" />
+				<param name="wmode" value="window" />
+				<param name="scale" value="showall" />
+				<param name="menu" value="true" />
+				<param name="devicefont" value="false" />
+				<param name="salign" value="" />
+				<param name="allowScriptAccess" value="sameDomain" />
+				<!--[if !IE]>-->
+				<object class="illuflash type="application/x-shockwave-flash" data="{{ asset('img/mincarousel/Realisation2.swf') }}" width="300" height="300">
+					<param name="movie" value="realisation2.swf" />
+					<param name="quality" value="high" />
+					<param name="bgcolor" value="#000000" />
+					<param name="play" value="true" />
+					<param name="loop" value="true" />
+					<param name="wmode" value="window" />
+					<param name="scale" value="showall" />
+					<param name="menu" value="true" />
+					<param name="devicefont" value="false" />
+					<param name="salign" value="" />
+					<param name="allowScriptAccess" value="sameDomain" />
+				<!--<![endif]-->
+					<a href="http://www.adobe.com/go/getflash">
+						<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Obtenir Adobe Flash Player" />
+					</a>
+				<!--[if !IE]>-->
+				</object>
+				<!--<![endif]-->
+			</object>
+		</div>
+ 
+
+  <div class="col-md-6 website">
+    <h4>Création de publicité sous Flash</h4>
+    <br/>
+      <p>Je devais créer comme le titre l'indique une publicité sur le thème de Londres sans plus d'informations que le nom de la ville elle-même.</p>
+  </div>
+</div>
+<br/>
+
+<div class="row">
+   <div class="col-md-4">
+			<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="600" height="373" id="realisation3" align="middle">
+				<param name="movie" value="realisation3.swf" />
+				<param name="quality" value="high" />
+				<param name="bgcolor" value="#000000" />
+				<param name="play" value="true" />
+				<param name="loop" value="true" />
+				<param name="wmode" value="window" />
+				<param name="scale" value="showall" />
+				<param name="menu" value="true" />
+				<param name="devicefont" value="false" />
+				<param name="salign" value="" />
+				<param name="allowScriptAccess" value="sameDomain" />
+				<!--[if !IE]>-->
+				<object class="illuflash type="application/x-shockwave-flash" data="{{ asset('img/mincarousel/Realisation3.swf') }}" width="300" height="300">
+					<param name="movie" value="realisation3.swf" />
+					<param name="quality" value="high" />
+					<param name="bgcolor" value="#000000" />
+					<param name="play" value="true" />
+					<param name="loop" value="true" />
+					<param name="wmode" value="window" />
+					<param name="scale" value="showall" />
+					<param name="menu" value="true" />
+					<param name="devicefont" value="false" />
+					<param name="salign" value="" />
+					<param name="allowScriptAccess" value="sameDomain" />
+				<!--<![endif]-->
+					<a href="http://www.adobe.com/go/getflash">
+						<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Obtenir Adobe Flash Player" />
+					</a>
+				<!--[if !IE]>-->
+				</object>
+				<!--<![endif]-->
+			</object>
+	</div>
+
+  <div class="col-md-6 website">
+    <h4>Une autre création de publicité sous Flash</h4>
+    <br/>
+      <p>Encore une création de publicité dynamique dans laquelle je devais jouer avec les effets de polymorphisme.</p>
+  </div>
+
+
+</div>
+
+</div>   
+</article>   
+
+{% endblock %}

@@ -1,0 +1,394 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	CV {{ parent() }}
+{% endblock %}
+
+
+{% block cv %}
+    <div class="disabled col-xs-1">&#9733; Mon CV</div>
+{% endblock %}
+
+
+
+{% block page %}
+<div class="navside">
+				<ul class="nav navbar-nav">
+					<li class="active">
+						<a href="#top">Identité</a>
+					</li>
+					<li class="active">
+						<a href="#secondplan">Compétences</a>
+					</li>
+					<li class="active">
+						<a href="#thirdplan">Formations</a>
+					</li>
+					<li class="active">
+						<a href="#fourthplan">Certifications</a>
+					</li>
+					<li class="active">
+						<a href="#fifthplan">Expériences</a>
+					</li>
+					<li class="active">
+						<a href="#sixthplan">Hobbies</a>
+					</li>
+				</ul>
+</div>
+
+<article id="backgroundcv" class="col-xs-12">	
+
+<div class="row">
+
+		<div class="col-lg-offset-1 col-lg-6 cvidentite">
+			<h2>IDENTITÉ</h2>
+			<br/>
+			<figure>
+				<img class="cvpicture"  src="{{ asset('img/illustrations/identite3.jpg') }}" alt="site R4ID">
+			</figure>
+
+				<br/>
+			<div class="row">
+			<div class="cvid col-lg-6">
+			<span>Nom</span><p>Aurélien Theriot alias S7tH</p> <br/>
+			<span>Anniversaire</span><p>11 mai 1982</p> <br/>
+			<span>Adresse</span><p>Saint André les Vergers, France</p> <br/>
+			<span>Email</span><p>aurelien.theriot@gmail.com</p>
+			</div>
+
+			<a href="{{ asset('downloads/CvTheriotA.jpg') }}" target="_blank" class="btn btn-primary btn-perso"><span class="glyphicon glyphicon-download-alt"></span> Télécharger mon CV</a>
+			<br/><br/><br/>
+			
+			<span>Mon profil </span> <span class="glyphicon glyphicon-hand-right"></span>
+    		<a href="https://www.linkedin.com/in/aurelien-theriot-66178812a" target="_blank"> <img src="{{ asset('img/illustrations/linkedin-button-small.png') }}"  alt="Linkedin"/></a><br/><br/>
+
+    		<div class="certifang">
+    			Maîtrise de l'anglais sur Duolingo : <b style="color:orange">Avancé</b> (estimation)<br/><br/>
+    			<img class="icon" src="https://media.licdn.com/media/AAEAAQAAAAAAAAkZAAAAJDU2MTY0MWYyLTQzMjYtNGZhMC04NDc4LTYxZTAyMDZlMmM4Mw.png"/>
+    		</div>
+			</div>
+	</div>
+		<span id="secondplan"></span>
+		<div class="col-lg-offset-1 col-lg-10 cvcompetences">
+			<h2>COMPÉTENCES</h2>
+			<br/>
+
+			<div class="cvlegende col-lg-12">
+				Expert <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+				Avancé <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+				Intermédiaire <span class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span>
+				Débutant <span class="stars">&#9733;&#9733;&#9734;&#9734;&#9734;</span>
+				Notions <span class="stars">&#9733;&#9734;&#9734;&#9734;&#9734;</span>
+			</div>
+
+			<div class="col-lg-5">
+			<h3>Logiciels Adobe</h3>
+			<ul>
+				<li><label>Photoshop</label><span class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span></li>
+				<li><label>Illustrator</label><span class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span></li>
+				<li><label>Dreamweaver *</label><span class="stars">&#9733;&#9733;&#9734;&#9734;&#9734;</span></li>
+				<li><label>Flash</label><span class="stars">&#9733;&#9733;&#9734;&#9734;&#9734;</span></li>
+			</ul>
+			<br/>
+			<h3>CMS</h3>
+			<ul>
+				<li><label>WordPress</label><span class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span></li>
+				<li><label>Prestashop</label><span class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span></li>
+			</ul>
+
+			<br/>
+			<h3>Terminal OS</h3>
+			<ul>
+				<li><label>GNU/Linux</label><span class="stars">&#9733;&#9733;&#9734;&#9734;&#9734;</span></li>
+			</ul>
+			
+			</div>
+
+			<div class="col-lg-offset-1 col-lg-6">
+			<h3>Langages</h3>
+			<ul>
+				<li><label>HTML5/CSS3</label><span class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span></li>
+				<li><label>JavaScript</label><span class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span></li>
+				<li><label>PHP/SQL</label><span class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span></li>
+				<li><label>JAVA</label><span class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span></li>
+			</ul>
+			<br/>
+			<h3>Framework</h3><span id="thirdplan"></span>
+			<ul>
+				<li><label>Symfony2</label><span class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span></li>
+				<li><label>Bootstrap</label><span class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span></li>
+				<li><label>Jquery</label><span class="stars">&#9733;&#9734;&#9734;&#9734;&#9734;</span></li>
+			</ul>
+			<h3>Autre</h3>
+			<ul>
+				<li><label>Git/GitHub</label><span class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span></li><br/>
+			</ul>
+
+			<h6>*Je n'utilise jamais Dreamweaver, je crée mes sites en général avec Sublime text, Brackets, Eclipse...</h6>
+		
+			</div>
+
+			
+		
+		</div>
+
+</div>
+
+
+
+<div class="row">
+
+		
+		<div class="col-lg-offset-1 col-lg-10 cvformation">
+
+			<h2>FORMATIONS</h2>
+			<br/>
+			<ul>
+				
+					<li><b>2015-2016 : En cours => Chef de projet multimédia - Développement</b><br/>
+					Formation en autodidacte sur le site MOOC OpenClassRoom
+					pour décrocher un titre de niveau II enregistré au RNCP
+					et avoir le statut de Chef de projet multimédia - Développement.<br/>
+					Vous pouvez consulter les certificats obtenus sur mon profil Linkedin.</li>
+
+					<br/>
+					
+					<li><b>2014-2016 : WEB MASTER WEB DESIGNER</b><br/>
+					Cours suivis par le CNFDI (Centre National de Formation à Distance)<br/>
+					&#9745;<em> Obtention d'un Certificat WebMaster\WebDesigner avec mention très bien</em><br/>
+					<a href="{{ asset('downloads/webmaster-webdesigner.jpg') }}" target="_blank" class="btn btn-primary btn-perso"><span class="glyphicon glyphicon-eye-open"></span> Voir les cours étudiés</a> 
+					</li>
+					
+					<br/>
+					
+					<li><b>2008 : SÉCURITÉ </b><br/><span id="fourthplan"></span>
+					École de Police a l'ENP de Reims<br/>
+	
+					
+					<br/>
+					
+					<li><b>2003 : COMMUNICATION GRAPHIQUE</b><br/>
+					École GUTENBERG à Illkirch-Graffenstaden (STRASBOURG)<br/></li>
+					
+					<br/>
+					
+					<li><b>2001 : INDUSTRIE GRAPHIQUE</b><br/>
+					Lycée des Lombards à TROYES<br/>
+					
+			</ul>
+		</div>
+
+		<div class="col-lg-offset-1 col-lg-10 cvcertifications">
+			
+			<h2>CERTIFICATIONS</h2>
+			<br/>
+			<a href="{{ asset('downloads/CertificatWebMasterWebDesigner.jpg') }}" target="_blank" class="btn btn-primary btn-perso">
+				<div class="certif">
+    				<b style="color:orange">WEBMASTER-WEBDESIGNER</b><br/><br/>
+    				CNFDI - Centre National privé de Formation à Distance<br/>
+    				<img class="icon" src="https://media.licdn.com/media/AAEAAQAAAAAAAAM2AAAAJDg3ZjFkYzQ1LTk0MjktNDk4MC05OTYxLTgxNjVmZWI2MDBjMw.png"/>
+    			</div>
+    		</a>
+
+    		<a href="https://www.cnfdi.com/formation-distance-webmaster-webdesigner-f-256.html" target="_blank" class="btn btn-sm btn-warning"><span class="glyphicon glyphicon-send"></span></a>
+    		
+    		<a href="https://openclassrooms.com/learning-path-certificates/3302542014" target="_blank" class="btn btn-primary btn-perso">
+    			<div class="certif">
+    				<b style="color:orange">Intégrateur Web</b><br/><br/>
+    				OpenClassrooms<br/>
+    				<img class="icon" src="https://media.licdn.com/media/p/3/005/08c/08b/12e7eea.png"/>
+    			</div>
+    		</a>
+
+    		<a href="https://openclassrooms.com/paths/web-developer" target="_blank" class="btn btn-sm btn-warning"><span class="glyphicon glyphicon-send"></span></a>
+    		
+    		<a href="https://openclassrooms.com/course-certificates/6919938771" target="_blank" class="btn btn-primary btn-perso">
+    			<div class="certif">
+    				<b style="color:orange">Comprendre le Web</b><br/><br/>
+    				OpenClassrooms<br/>
+    				<img class="icon" src="https://media.licdn.com/media/p/3/005/08c/08b/12e7eea.png"/>
+    			</div>
+    		</a>
+
+    		<a href="https://openclassrooms.com/courses/comprendre-le-web" target="_blank" class="btn btn-sm btn-warning"><span class="glyphicon glyphicon-send"></span></a>
+
+    		<a href="https://openclassrooms.com/course-certificates/6478192864" target="_blank" class="btn btn-primary btn-perso">
+    			<div class="certif">
+    				<b style="color:orange">Découvrez les solutions CMS</b><br/><br/>
+    				OpenClassrooms<br/>
+    				<img class="icon" src="https://media.licdn.com/media/p/3/005/08c/08b/12e7eea.png"/>
+    			</div>
+    		</a>
+
+    		<a href="https://openclassrooms.com/courses/decouvrez-les-solutions-cms" target="_blank" class="btn btn-sm btn-warning"><span class="glyphicon glyphicon-send"></span></a>
+
+    		<a href="https://openclassrooms.com/course-certificates/4709617682" target="_blank" class="btn btn-primary btn-perso">
+    			<div class="certif">
+    				<b style="color:orange">Créez votre premier site avec WordPress</b><br/><br/>
+    				OpenClassrooms<br/>
+    				<img class="icon" src="https://media.licdn.com/media/p/3/005/08c/08b/12e7eea.png"/>
+    			</div>
+    		</a>
+
+    		<a href="https://openclassrooms.com/courses/creez-votre-site-avec-wordpress" target="_blank" class="btn btn-sm btn-warning"><span class="glyphicon glyphicon-send"></span></a>
+
+    		<a href="https://openclassrooms.com/course-certificates/3193933466" target="_blank" class="btn btn-primary btn-perso">
+    			<div class="certif">
+    				<b style="color:orange">Créez votre site professionnel avec WordPress</b><br/><br/>
+    				OpenClassrooms<br/>
+    				<img class="icon" src="https://media.licdn.com/media/p/3/005/08c/08b/12e7eea.png"/>
+    			</div>
+    		</a>
+
+    		<a href="https://openclassrooms.com/courses/https://openclassrooms.com/courses/creez-votre-site-professionnel-avec-wordpress" target="_blank" class="btn btn-sm btn-warning"><span class="glyphicon glyphicon-send"></span></a>
+
+    		<a href="https://openclassrooms.com/course-certificates/78505102" target="_blank" class="btn btn-primary btn-perso">
+    			<div class="certif">
+    				<b style="color:orange">Apprenez à créer votre site web avec HTML5 et CSS3</b><br/><br/>
+    				OpenClassrooms<br/>
+    				<img class="icon" src="https://media.licdn.com/media/p/3/005/08c/08b/12e7eea.png"/>
+    			</div>
+    		</a>
+
+    		<a href="https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3" target="_blank" class="btn btn-sm btn-warning"><span class="glyphicon glyphicon-send"></span></a>
+
+
+    		<a href="https://openclassrooms.com/course-certificates/2946777" target="_blank" class="btn btn-primary btn-perso">
+    			<div class="certif">
+    				<b style="color:orange">Concevez votre site web avec PHP et MySQL</b><br/><br/>
+    				OpenClassrooms<br/>
+    				<img class="icon" src="https://media.licdn.com/media/p/3/005/08c/08b/12e7eea.png"/>
+    			</div>
+    		</a>
+
+    		<a href="https://openclassrooms.com/courses/concevez-votre-site-web-avec-php-et-mysql" target="_blank" class="btn btn-sm btn-warning"><span class="glyphicon glyphicon-send"></span></a>
+
+
+    		<a href="https://openclassrooms.com/course-certificates/5908608299" target="_blank" class="btn btn-primary btn-perso">
+    			<div class="certif">
+    				<b style="color:orange">Apprenez à coder avec JavaScript</b><br/><br/>
+    				OpenClassrooms<br/>
+    				<img class="icon" src="https://media.licdn.com/media/p/3/005/08c/08b/12e7eea.png"/>
+    			</div>
+    		</a>
+
+    		<a href="https://openclassrooms.com/courses/apprenez-a-coder-avec-javascript" target="_blank" class="btn btn-sm btn-warning"><span class="glyphicon glyphicon-send"></span></a>
+
+    		<a href="https://openclassrooms.com/course-certificates/7441382922" target="_blank" class="btn btn-primary btn-perso">
+    			<div class="certif">
+    				<b style="color:orange">Créez des pages web interactives avec JavaScript</b><br/><br/>
+    				OpenClassrooms<br/>
+    				<img class="icon" src="https://media.licdn.com/media/p/3/005/08c/08b/12e7eea.png"/>
+    			</div>
+    		</a>
+
+    		<a href="https://openclassrooms.com/courses/creez-des-pages-web-interactives-avec-javascript" target="_blank" class="btn btn-sm btn-warning"><span class="glyphicon glyphicon-send"></span></a>
+    	
+
+
+    		<a href="https://openclassrooms.com/course-certificates/2573459815" target="_blank" class="btn btn-primary btn-perso"><span id="fifthplan"></span>
+    			<div class="certif">
+    				<b style="color:orange">Gérez votre code avec Git et GitHub</b><br/><br/>
+    				OpenClassrooms<br/>
+    				<img class="icon" src="https://media.licdn.com/media/p/3/005/08c/08b/12e7eea.png"/>
+    			</div>
+    		</a>
+
+    		<a href="https://openclassrooms.com/courses/gerer-son-code-avec-git-et-github" target="_blank" class="btn btn-sm btn-warning"><span class="glyphicon glyphicon-send"></span></a>
+
+    		<a href="https://openclassrooms.com/course-certificates/2932794430" target="_blank" class="btn btn-primary btn-perso"><span id="fifthplan"></span>
+    			<div class="certif">
+    				<b style="color:orange">Découvrez les bases de la gestion de projet</b><br/><br/>
+    				OpenClassrooms<br/>
+    				<img class="icon" src="https://media.licdn.com/media/p/3/005/08c/08b/12e7eea.png"/>
+    			</div>
+    		</a>
+
+    		<a href="https://openclassrooms.com/courses/decouvrez-les-bases-de-la-gestion-de-projet" target="_blank" class="btn btn-sm btn-warning"><span class="glyphicon glyphicon-send"></span></a>
+
+    		<a href="https://openclassrooms.com/course-certificates/5517297557" target="_blank" class="btn btn-primary btn-perso"><span id="fifthplan"></span>
+    			<div class="certif">
+    				<b style="color:orange">Découper et intégrer une maquette</b><br/><br/>
+    				OpenClassrooms<br/>
+    				<img class="icon" src="https://media.licdn.com/media/p/3/005/08c/08b/12e7eea.png"/>
+    			</div>
+    		</a>
+
+    		<a href="https://openclassrooms.com/courses/decouper-et-integrer-une-maquette" target="_blank" class="btn btn-sm btn-warning"><span class="glyphicon glyphicon-send"></span></a>
+
+    		<a href="https://openclassrooms.com/course-certificates/1544625784" target="_blank" class="btn btn-primary btn-perso"><span id="fifthplan"></span>
+    			<div class="certif">
+    				<b style="color:orange">Prenez en main Bootstrap</b><br/><br/>
+    				OpenClassrooms<br/>
+    				<img class="icon" src="https://media.licdn.com/media/p/3/005/08c/08b/12e7eea.png"/>
+    			</div>
+    		</a>
+
+    		<a href="https://openclassrooms.com/courses/prenez-en-main-bootstrap" target="_blank" class="btn btn-sm btn-warning"><span class="glyphicon glyphicon-send"></span></a>
+    		
+		</div>
+
+		<div class="col-lg-offset-1 col-lg-10 cvexperience">
+			
+			<h2>EXPÉRIENCE</h2>
+			<br/>
+			<ul>
+				<li><b>2014 - 2016 : <br/> DEV Fullstack </b>
+				<br/>
+				Ma principale expérience, est celle que je me forge en pratiquant chaque jour des leçons et exercices tout particulièrement sur le site OpenClassRoom.
+				<br><br>
+				Grâce à cette communauté j'ai acquis de bonnes méthodes de travail et un goût prononcé pour l'apprentissage.
+				Motivé, plein de volonté et de persévérance, j'ai aujourd'hui atteint un objectif qui me semblait autrefois compliqué, comprendre et manipuler des langages informatiques.
+				<br/><br>
+				Pour exemple, voici mon premier site dynamique en PHP SQL HTML5 CSS3 et JavaScript au notepad++ 
+				de manière procédural pour une petite équipe en ligne.
+				<br/>voici l'adresse : <a href="http://r4id.atspace.eu/" title="Lien du site R4ID" target="_blank">TEAM R4ID</a><br/><span id="sixthplan"></span>
+				<p>Ou encore mon profil GitHub. <a href="https://github.com/s7th" target="_blank"><img src="{{ asset('bundles/bootstrap/images/github.png') }}"  alt="GitHub"/></a></p></li>
+
+
+				
+				<br/>
+
+				
+				<li><b>01/2008 - 08/2014 :<br/> AGENT DE POLICE NATIONALE</b><br/>
+				J'y ai acquis le sens de l'ordre, de la hiérarchie et des responsabilités en tant qu'agent de terrain en Police secours, agent au service d'accueil du public, agent d'escorte de détenus au tribunal ou encore en traitant des dossiers en bureau de Police. Dans ce métier comme tant d'autres il faut savoir être réactif tout en prenant les bonnes décisions.</li>
+			</ul>
+
+		</div>
+</div>
+<br/>
+<div class="cvproverb"><h3>Rien de <b>GRAND</b> ne s'est accompli dans le monde sans passion <i>(Hegel)</i></h3></div>
+
+		
+
+	<div class="row">
+		<div class="col-lg-offset-1 col-lg-10 cvinteret">
+
+			<h2>CENTRES D'INTÉRÊT</h2>
+			<br/>
+			<ul>
+				<li>La musique rock et électro : Je suis réceptif aux sons et à leur composition, à l'inverse, je le suis beaucoup moins aux paroles.</li><br/>
+
+				<li>Le design : Tel le son, il influe directement sur mon ressenti, j'aime créer des ambiances où je me sens dans mon élément.</li><br/>
+
+				<li>L'histoire : J'aime découvrir en profondeur les sujets auxquels je me retrouve confronté au jour le jour, faire un voyage mental dans le passé et découvrir l'origine de telle expression, etc. Mais les histoires qui me fascinent le plus, sont celles qui se cachent dans les mythologies découlant sur l'origine du genre humain.</li><br/>
+
+				<li>La science : Je suis toujours admiratif devant tant de passion et d'ingéniosité. Elle ne cesse, la plupart du temps, d'améliorer notre présent et de remplir notre futur d'espoir.</li><br/>
+
+				<li>La Science Fiction : J'ai parfois l'esprit très évasif et la science-fiction est un domaine où je retrouve cette sensation de liberté, où rien est impossible. Elle ouvre la voie au futur de notre science dans bien des cas et je pense pouvoir dire que sans science fiction, la science actuelle ne serait certainement pas aussi créative.</li><br/>
+
+				<li>Les jeux vidéo : Depuis tout jeune, j'ai toujours été fasciné par l'incroyable divertissement et enrichissement que pouvaient créer des assemblages de sons, d'images et de mathématiques. C'est un peu de la science-fiction interactive quelque part...</li><br/>
+
+				<li>Le sport : En dehors d'activités mentales il faut bien aussi utiliser le restant de notre corps. Même si la science à longtemps tout fait pour améliorer notre confort et de ce fait à augmenté notre sédentarisme,
+				j'ai toujours en tête cette phrase "un esprit sain dans un corps sain".
+				Je pratique donc régulièrement du cardio ainsi que des exercices de gym et musculation.
+				J'adore repousser à chaque fois mes limites.
+				En revanche, je ne suis pas très "supporter".
+				Ne vous attendez donc pas à ce que je vous donne le résultat du dernier match de foot par exemple.</li>
+
+			</ul>
+		</div>
+	</div>
+
+	</article>	
+{% endblock %}
+

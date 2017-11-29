@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        {% block meta %}
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta name="description" content="site cv de M.Theriot Aurélien, web developer, aurelien-theriot.atspace.eu"></meta>
+            <meta name="keywords" content="Thériot Aurélien, cv, web developer, theriot"></meta>
+        {% endblock %}
+
+        <title>{% block title %}&#9775; A.T.{% endblock %}</title>
+
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+   
+        {% block stylesheets %}
+	        <!-- Bootstrap -->
+            <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+            <!-- Custom CSS -->
+            <link href="{{ asset('css/myConfig.css') }}" rel="stylesheet">
+        
+            <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+            <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+            <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+            <![endif]-->
+        {% endblock %}
+    </head>
+
+
+    <body id="top">
+
+        {% block navside %}
+        <div class="anchorup">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="#top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="anchordown">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="#bottom"><span class="glyphicon glyphicon-arrow-down"></span></a>
+                </li>
+            </ul>
+        </div>
+        {% endblock %}
+        
+        <div class="container-fluid"></div>
+            <nav class="row navbar navbar-perso navbar-fixed-top">
+                <div class="container-fluid">
+    
+                    {% block brand %}
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header navbar">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand page-scroll" href="#page-top">Aurélien Thériot<br/>{ Développeur PHP Symfony }</a>
+                    </div>
+                    {% endblock %}
+    
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav">
+                        
+                        {% block header %}
+                        <div class="row">
+                            {% block presentation %}
+                            <li>
+                                <a class="page-scroll" href="{{ path('homepage') }}"><div class="navon col-xs-1 col-sm-1 col-md-1">&#9775; Accueil</div></a>
+                            </li>
+                            {% endblock %}
+                            {% block creation %}
+                            <li>
+                                <a class="page-scroll" href="{{ path('portfolio') }}"><div class="navon col-xs-1 col-sm-1 col-md-1">&#9749; Travaux</div></a>
+                            </li>
+                            {% endblock %}
+                            {% block cv %}
+                            <li>
+                                <a class="page-scroll" href="{{ path('cv') }}"><div class="navon col-xs-1 col-sm-1" col-md-1>&#9733; Mon CV</div></a>
+                            </li>
+                            {% endblock %}
+                            {% block contact %}
+                            <li>
+                                <a class="page-scroll" href="{{ path('contact') }}"><div class="navon col-xs-1 col-sm-1" col-md-1>&#9742; Contact</div></a>
+                            </li>
+                            {% endblock %}
+                        </div>
+                        {% endblock %}
+                        </ul>
+                    </div>
+                <!-- /.navbar-collapse -->
+                </div>
+            <!-- /.container-fluid -->
+            </nav>
+
+
+
+            <div class="row">
+                {% block page %}
+	            {# ////////////page content///////////// #}
+                {% endblock %}
+            </div>
+
+            <span  id="bottom"></span>
+
+            <footer class="row nav navbar-perso2 navbar-fixed-bottom">
+                {% block footer %}        
+                    Site crée sous Symfony 3 et bootstrap par THERIOT.Aurélien
+                {% endblock %}
+            </footer>
+        
+        </div>
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+

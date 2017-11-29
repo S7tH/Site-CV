@@ -1,0 +1,206 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Accueil {{ parent() }}
+{% endblock %}
+
+
+
+{% block presentation %}
+  <div class="disabled col-xs-offset-1 col-md-offset-2 col-xs-1">&#9775; Accueil</div>
+{% endblock %}
+
+
+
+
+{% block page %}
+<div class="navside">
+	<ul class="nav navbar-nav">
+		<li class="active">
+			<a href="#top">Accueil</a>
+		</li>
+		<li class="active">
+			<a href="#secondplan">Présentation</a>
+		</li>
+		<li class="active">
+			<a href="#thirdplan">Mon histoire</a>
+		</li>
+				</ul>
+</div>
+
+<article id="backgroundaccueil">
+
+
+
+<div id="title">
+	<h1>Bienvenue sur mon site CV !</h1>
+	<br/>
+		<h3>
+			<em><p>Passionné par la création assistée par ordinateur, aussi bien en programmation que par le design,</p>
+			<p>c'est tout naturellement que je me suis tourné vers le métier de Web Master Web Designer.</p></em>
+		</h3>
+	<br/><!--ancre Histoire--><span id="secondplan"></span><!--ancre Histoire-->
+	
+		<h5>
+			<p>Si vous désirez en apprendre davantage sur ma personne,</p>
+			<p>je vous invite à faire défiler cette page ou à me contacter via l'onglet Contact.</p>
+		</h5>
+			
+</div>
+
+
+
+<div id="whoiam">
+	<h1 class="titleplan">Présentation</h1>
+
+
+	<p><h4>Je m'appelle Aurélien Thériot, je suis né à Langres dans la Haute Marne le 11 mai 1982.</h4></p>
+
+	
+	<p><img src="{{ asset('img/illustrations/langres.jpg') }}" class="floatimage" alt="Ville de Langres"/>
+	
+	<br/>
+
+	<p>Lorsque j'étais plus jeune, je dessinais beaucoup.
+	Je n'avais certes pas un talent hors normes mais un coup de crayon suffisant pour donner une âme à ce qui sortait de mon imagination.</p>
+	<p>Aujourd'hui des logiciels comme Photoshop me permettent de mixer, transformer ou adapter des photos et illustrations à ma guise et je trouve cela vraiment passionnant.</p>
+	<br/>
+	<p>Mais il y'a un domaine qui me fascine tout autant, la conception en langage informatique.</p>
+	<p>Sous leur forme de casse-tête, un peu comme doit l'être la conception de l'univers,	
+	j'y trouve un moyen de créer quasiment sans limite ce qui me passe par la tête.</p>
+	
+	<br/>
+
+	<p>J'ai toujours été fasciné par ce qu'on est capable de faire en informatique, c'est comme créer un monde à l'intérieur du nôtre.</p>
+	<p>Pour une personne qui comme moi adore inventer sa conception de nouveaux mondes, quoi de mieux que le domaine du jeu vidéo par exemple.</p>
+	<p>À l'époque ne sachant pas coder, j'ai participé à des projets de mods basés sur des jeux vidéo tels que Cs, Battlefield 1 et 2 ou encore Neverwinternight 1 et 2 en tant que Mapper/GameDesigner.</p>
+	<p>J'ai même été à la tête d'une petite équipe pour animer une communauté de plus de 300 membres sur deux de ces modes.</p>
+	<p>Cependant pendant longtemps j'ai préféré croire que la programmation m'était hors de portée et je trouvais dommage de ne pas avoir le savoir faire pour donner vie à mes idées de ce côté-là.</p><br/>
+	<p>jusqu'au jour où j'y ai cru et à présent me voilà pour de bon !</p>
+
+	<br/>
+
+	<p>Autodidacte aimant penser par lui-même, je peux "parfois" paraître un peu mystérieux au premier abord, mais n'en doutez pas, je suis accessible et très ouvert d'esprit.</p>
+	<p>Travailler seul ou en groupe, je sais m'adapter.<br/> 
+	Ce que j'apprécie le plus dans le travail de groupe c'est la magie et la satisfaction que crée une bonne synergie.
+	Dans le travail en solitaire, c'est de soliciter mon côté débrouillard.</p>
+	<p>Créant surtout par passion, j'aime partager et offrir ce que je crée avec autrui.</p>
+
+	<br/>
+
+	<p><h4>Pourquoi ai-je décidé de me tourner vers le monde du web ?</h4></p>
+
+	<p>J'aime mettre en forme et dynamiser tout élément visuel, le web m'apporte ce dont j'ai besoin dans un premier temps.</p>
+	<p>Mais je ne compte pas m'arreter là, j'ai pour objectif de savoir concevoir des applications, voir même participer à la création de jeux-vidéo.<br/>
+	<p>Mais pour commencer dans le monde de la programmation j'ai souhaité commencer par le domaine qui me semble incontournable et qui devient de plus en plus un lien fort à toutes ces technologies.</p> 
+	<br/>
+	<img src="{{ asset('img/illustrations/shadowman.jpg') }}" class="floatimage" alt="Ville de Langres"/>
+	<p>Tout le monde ou presque a un pseudonyme sur le net, ne dérogeant pas à la règle, le mien est S7tH.<br/>
+	 Cela se prononce comme le chiffre sept en français.</p>
+	<br/>
+	<p><h4>Pourquoi S7tH ?</h4></p><!--ancre qui suis-je--><span id="thirdplan"></span><!--ancre qui suis-je-->
+	<p>À dire vrai, enfant j'étais passionné par la mythologie grecque et égyptienne.<p>
+	<p>Seth, dans la mythologie égyptienne est représenté par un canidé et mon animal préféré est sans aucun doute l'un d'entre eux, le loup.
+	<p>Pour le 7, c'est tout simplement un chiffre clé dans les évangiles que ce soit bon ou mauvais présage.</p>
+	<p>Cela laisse planer du mystère donc, mais bien entendu, la raison principale de mon choix est que cela me plaisait bien et c'est tout ce qui compte non ?</p>
+		<br/>
+	<p>L'essentiel de quelqu'un se découvre au fil du temps et il reste beaucoup encore à découvrir...</p>
+	<p>Alors n'hésitez pas à m'envoyer un message via mon email que vous retrouverez dans l'onglet contact, pour toute question, ou toute autre demande.</p>
+
+</div>
+<br/>
+<div id="story">
+	<h1 class="titleplan">L'informatique et moi</h1>
+	<p><img src="{{ asset('img/illustrations/Amstrad_CPC_6128.jpg') }}" class="floatimage" alt="Amstrad_CPC_6128"/>
+	L'un de mes plus vieux souvenirs remonte à mes quatre ans, le jour où mon oncle était surexcité à l'idée de me dévoiler sa dernière acquisition en matière de technologie, un ordinateur Amstrad CPC 6128...</p>
+
+	<p>Naturellement, à ce moment là je le fixai longuement d'un regard interrogateur. Un ordinateur ? Mais qu'est-ce donc...</p><br/>
+
+	<p>Une fois branché, je découvris un téléviseur affichant des lettres sur un fond noir. Mais où sont passé ces bons vieux dessins animés dont je raffolais tant ?</p>
+
+	<p>Il m'invita à tester le dernier jeu de conquête spatiale et
+	je n'eus pas mis longtemps avant de m'émerveiller devant ce dessin animé interactif qui se présentait à moi...</p>
+	<p>Mieux que la télé, on peut interagir avec l'image, l'osmose entre l'hominidé et la machine était alors née en moi.</p>
+
+	<br/>
+
+	<p>Puis arriva les années 90 où l'éternelle question "que veux-tu faire comme métier plus tard ?" ne cessait de retentir.</p>
+
+	<p>Je répondais vouloir travailler dans le domaine de la création vidéoludique, mais les écoles dans le domaine n'étaient pas encore de mise, du moins en France, et les moyens d'information n'étaient pas ce qu'ils sont aujourd'hui.</p>
+
+	<p>Ne sachant par où m'orienter, la question resta longtemps en suspens...</p><br/>
+	<p>À quoi bon voguer sur l'océan de l'apprentissage lorsque l'on n'a pas de cap ? De plus, je dois avouer que l'école traditionnelle ne me motivait pas vraiment.</p>
+	
+	
+	<p><img src="{{ asset('img/illustrations/emac-g4.jpg') }}" class="floatimage" alt="iMac G4"/>Un jour, mon conseiller d'orientation, me présenta le métier de PFI en PAO (préparateur à la forme imprimante en poste assisté par ordinateur).</p>
+
+	<p>Le métier étant étroitement lié à l'imprimerie, le nombre de places étaient divisé inégalement entre la formation de PFI et celle d'imprimeur.</p>
+
+	<p>Afin de savoir quel métier les candidats allaient étudier, un test devait être passé.</p>
+
+	<p>De plus à cette époque, le métier d'imprimeur considéré plus "masculin", dans 90% des cas, les femmes passaient naturellement dans la section préparatrice à la forme imprimante.</p>
+	<p>Autant vous dire que seuls les hommes étaient réellement alors en compétition.</p>
+
+	<p>J'ai eu beaucoup de chance ce jour-là, ma rédaction racontant l'histoire de nains farfelus, fit beaucoup rire sa correctrice.</p>
+	<p>C'est ainsi que je fus choisi en tant qu'unique homme de la section PFI.</p><br/>
+
+	<p>Une fois mon diplôme en poche, je m'envolai vers la magnifique ville de Strasbourg où je continuai mes études en Communication Graphique.
+
+	C'était alors la prépréhistoire de l'internet, j'ai appris à façonner mes premiers sites vitrine avec les outils de l'époque.</p>
+
+	<p>Mais les métiers du domaine me semblaient trop austères et peu motivants pour l'époque.</p>
+	<p>Des doutes s'intallèrent quant à mon avenir professionnel...</p><br/>
+
+	<p>Par la suite, je créai quelques sites internet pour le loisir avec notamment, un forum servant aux communautés que je fondais avec d'autres tiers, autour d'un jeu ou modules que j'avais généralement conçu.</p>
+
+	<p>Ce que j'aimais le plus dans tout ça, c'était de partager mon univers à travers l'ambiance mise en place par le design de mes sites ainsi que le level design de mes modules.</p>
+	<p>Je faisais vivre le tout en intégrant à ses univers, une histoire venant tout droit de mon imagination où bien souvent je m'inspirais des mythes et légendes.</p><br/>
+
+	<p><img src="{{ asset('img/illustrations/mypolice.jpg') }}" class="floatimage" alt="moi dans la Police"/>Mon diplôme prenant la poussière, il fallait que je trouve une alternative.</p>
+
+	<p>Au fond de moi-même, j'ai toujours voulu devenir un policier.</p>
+	<p>Ce genre de protecteur du bien que l'on voit souvent dans les films, défendant le peuple de l'oppression du grand banditisme...</p>
+
+	<p>Le métier, certes bien different de mes fantasmes, malgré tout me forgea une carapace bien plus solide et m'a permis de découvrir bien des choses.</p>
+
+	<p>Cependant, certains aspects du métier m'instaurèrent rapidement une grande lassitude.</p>
+	 <p>Le fait d'être perpétuellement confronté à des êtres qui vraisemblablement avaient depuis longtemps renoncés à vouloir aller de l'avant en apprenant de leurs erreurs.</p>
+	 <p>Rien de créatif ne se présentait à moi dans ce milieu, où les mêmes scénarios ne cessaient de se répeter telle la rotation bien huilée d'un carrousel..</p><br/>
+
+	<p>Un jour, un collègue qui partage mon opinion, proposa l'idée folle de nous lancer dans la création d'un jeu vidéo independant.</p>
+
+	<p>Pour ma part, je m'initiai au C++, et y pris goût. Mon camarade eut des imprévus et le projet fut malheureusement interrompu.</p>
+	<p>Cependant, celà éveilla en moi un intérêt pour les langages informatiques et c'est ainsi, en cherchant davantage de cours, que ma curiosité pour le monde du web fit sa réapparition.</p>
+	<p>Je décidai alors de me reconvertir professionnellement.
+	</p>
+	
+	<br/>
+
+	
+	<p>Après avoir quitté la Police, je m'offris une formation de WebMaster/WebDesigner.</p>
+
+	<P>Trouvant la formation trop généraliste et autodidacte dans l'âme, je completai mes cours aupres de MOOC et diverses documentations sur les différents outils du web.</p>
+
+	<img src="{{ asset('img/illustrations/matrix.jpg') }}" class="floatimage" alt="code"/>
+	<p>Tout ceci ne fut pas simple, j'étais face à un océan d'informations pas toujours très clair pour moi, il me manquait bien souvent des connaissances ou références...</p>
+	<p>À chaque nouvel inconnu, s'ouvrait un nouveau sentier que je devais emprunter.</p>
+
+	<p>Livré à moi-même, me débattant afin de garder la tête hors de l'eau, je nageais à tatillons à la fois dans l'émerveillement, le doute et la peur de ne pas m'en sortir.</p>
+
+	<p>Durant tout ce temps, j'avais pour seules armes ma persévérance et le soutiens de ma belle, pour relever les défis portés par chaque vague de cette eau binaire.</p><br/>
+
+	<p>Le chemin est encore long et la vie est un éternel apprentissage où l'homme ne cesse d'aller vers l'avant, créant ainsi de nouveaux horizons.</p>
+
+	<p>À présent, je continue de me confronter à de nouveaux défis chaque jour, mais à la différence, je sais maintenant surfer sur quelques vagues.</p>
+
+	<p>Merci de votre visite ! <img src="{{ asset('img/illustrations/tagS7th.png') }}"  alt="logo S7tH"/></p>
+
+</div>
+
+<br/>
+
+
+
+</article>
+
+{% endblock %}
