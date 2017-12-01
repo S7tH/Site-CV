@@ -70,14 +70,6 @@
 	}
 }
 
-@media (max-width: 992px) 
-{
-	.navside
-	{
-		display: none;
-	}
-}
-
 
 @media (min-width: 361px)
 {
@@ -113,43 +105,7 @@
 
 	article
 	{
-    padding-top: 160px;
-	}
-
-	.navside
-	{
-		position: fixed;
-		top :195px;
-		right: 6%;
-		width:320px;
-		z-index: 2000;
-	}
-
-	.navside a
-	{
-		color: white;
-		background: linear-gradient(to top, rgba(1,27,29,0.8), black 40%, rgba(1,27,29,0.8) 75%, black 96%, rgba(1,27,29,0.3));
-		border-radius: 10px;
-		border: 2px grey ridge;
-		width:105px;
-		height: 40px;
-		text-align: center;
-		font-size: 12px;
-		font-weight: bold;
-	}	
-
-	.navside a:hover
-	{
-		color: purple;
-		font-weight: bold;
-		background: white;
-		border: 2px black ridge;
-	}
-
-	.navside a:focus
-	{
-		color: silver;
-		border: 2px grey ridge;
+    	padding-top: 160px;
 	}
 }
 
@@ -159,30 +115,25 @@
 
 body
 {
+	min-width: 400px;
 	background: linear-gradient(to top, rgba(74,88,92,0.3), black 40%, rgba(74,88,92,0.3) 75%, black), black;
+	font-family: 'Exo', sans-serif;
 }
 
 article
 {
 	background: none;
-
 	color : grey;
-
 	padding-bottom: 20px;
 }
 
 footer
 {
   	border-top: 2px grey ridge;
-
 	color: white;
-
 	font-size: 9px;
-
 	text-align:right;
-
 	padding-right: 10%;
-
 	height : 20px;
 }
 
@@ -191,30 +142,6 @@ footer
 	height:100%;
 }
 
-/*--------------------------------------------------General component html OVER####*/
-
-.anchorup, .anchordown
-{
-	position: fixed;
-	z-index: 3;
-	right:0px;
-	color: white;
-}
-
-.anchorup
-{
-	top : 40%;
-}
-
-.anchordown
-{
-	bottom : 40%;
-}
-
-.glyphicon-arrow-up, .glyphicon-arrow-down
-{
-	color:grey;
-}
 
 /*####Customized Navigation bar
 -------------------------------------------------- */
@@ -227,40 +154,23 @@ footer
 	.navon
 	{
   		color : white;
-
   		background: linear-gradient(to top, rgba(127,107,149,0.9), black 40%, rgba(127,107,149,0.9)75%, black 96%, rgba(100,107,149,0.9), black);
-	
  		height: 35px;
-	
  		width : 75px;
-	
 		border: 2px grey ridge;
-	
 		border-radius: 25px;
-
     	box-shadow: 0px 4px 4px #1c1a19;
-	
 		text-shadow: 0px 2px 1px black;
-	
 		font-size: 9px;
-	
 		font-weight:bold;
-
 		text-align: center;
-
 		padding-top: 2px;
-	
 		margin-top: 2px;
-
 		margin-bottom: 2px;
-	
-	-webkit-user-select: none;
-
-	-moz-user-select: none;
-
-	-ms-user-select: none;
-
-	user-select: none;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
 	}
 
 	.navon:hover,
@@ -281,39 +191,22 @@ footer
 	.disabled:focus
 	{
   		color: #fff;
-
   		background: linear-gradient(to top, rgba(74,88,92,0.9), black, rgba(74,88,92,0.9)75%, black);
-
 		height: 35px;
-	
 		width: 75px;
-	
 		border: 2px grey ridge;
-	
 		border-radius: 8px;
-
     	box-shadow: 0px 4px 4px #1c1a19;
-	
 		text-shadow: 0px 2px 1px black;
-	
 		font-size: 10px;
-	
 		font-weight:bold;
-
 		text-align: center;
-
 		padding-top: 2px;
-	
 		margin-top: 2px;
-
 		margin-bottom: 2px;
-
 		-webkit-user-select: none;
-
 		-moz-user-select: none;
-
 		-ms-user-select: none;
-
 		user-select: none;
 	}
 
@@ -331,39 +224,22 @@ footer
 	.navon
 	{
   		color : white;
-
   		background: linear-gradient(to top, rgba(127,107,149,0.9), black 40%, rgba(127,107,149,0.9)75%, black 96%, rgba(100,107,149,0.9), black);
-	
  		height: 35px;
-	
- 		width : 100px;
-	
-		border: 2px grey ridge;
-	
+ 		width : 100px;	
+		border: 2px grey ridge;	
 		border-radius: 25px;
-
-   		box-shadow: 0px 4px 4px #1c1a19;
-	
-		text-shadow: 0px 2px 1px black;
-	
-		font-size: 12px;
-	
+   		box-shadow: 0px 4px 4px #1c1a19;	
+		text-shadow: 0px 2px 1px black;	
+		font-size: 12px;	
 		font-weight:bold;
-
 		text-align: center;
-
-		padding-top: 7px;
-	
+		padding-top: 7px;	
 		margin-top: 2px;
-
-		margin-bottom: 2px;
-	
+		margin-bottom: 2px;	
 		-webkit-user-select: none;
-
 		-moz-user-select: none;
-
 		-ms-user-select: none;
-
 		user-select: none;
 	}
 
@@ -383,39 +259,22 @@ footer
 	.disabled:focus
 	{
   		color: #fff;
-
-  		background: linear-gradient(to top, rgba(74,88,92,0.9), black, rgba(74,88,92,0.9)75%, black);
-
-		height: 35px;
-	
-		width: 100px;
-	
-		border: 2px grey ridge;
-	
+ 		background: linear-gradient(to top, rgba(74,88,92,0.9), black, rgba(74,88,92,0.9)75%, black);
+		height: 35px;	
+		width: 100px;	
+		border: 2px grey ridge;	
 		border-radius: 8px;
-
-  	  	box-shadow: 0px 4px 4px #1c1a19;
-	
-		text-shadow: 0px 2px 1px black;
-	
-		font-size: 12px;
-	
+  		box-shadow: 0px 4px 4px #1c1a19;	
+		text-shadow: 0px 2px 1px black;	
+		font-size: 12px;	
 		font-weight:bold;
-
 		text-align: center;
-
-		padding-top: 7px;
-	
+		padding-top: 7px;	
 		margin-top: 2px;
-
 		margin-bottom: 2px;
-
 		-webkit-user-select: none;
-
 		-moz-user-select: none;
-
 		-ms-user-select: none;
-
 		user-select: none;
 	}
 
@@ -424,6 +283,7 @@ footer
 		height: 75%;
 	}
 }
+
 
 /*navbar container*/
 
@@ -436,21 +296,28 @@ footer
 {
 	color: snow;
 	text-shadow: 2px 2px 1px black;
+	font-family: 'Permanent Marker', cursive;
 	font-size: 2em;
-	line-height:1em;
+	line-height:1.2em;
 }
 
 .navbar-toggle
 {
-	font-size: 2em;
-	color: red;
+	padding:1%;
+}
+
+.navbar-collapse
+{
+	padding-left: 50px;
+	margin-top: 56px;
 }
 
 .navbar-perso 
 { 
+	min-width: 400px;
 	padding: 2%;
 	background: url("../img/banniersitecv.gif") no-repeat;
-	height: 100%;
+	min-height: 215px;
 	background-position: top center;
 	box-shadow: 0px 4px 4px #1c1a19;
 	color: #9d9d9d;
@@ -462,6 +329,7 @@ footer
 	background: linear-gradient(to top, rgba(74,88,92,0.8), black 40%, rgba(74,88,92,0.8) 75%, black 96%, rgba(100,107,149,0.3), black);
 }
 
+
 /*####Accueil page configuration
 -------------------------------------------------- */
 @media (max-width: 767px) 
@@ -469,12 +337,14 @@ footer
 	#backgroundaccueil
 	{
 		background: url("../img/backgroundaccueilgsm.jpg") fixed no-repeat;
+		padding-top: 55%;
 	}
 
 	#title
 	{
 		height:100%;
-		padding: 2%;
+		padding: 6%;
+		min-height:400px;
 	}
 
 }
@@ -488,7 +358,7 @@ footer
 	#title
 	{
 		padding-top: 15%;
-		height:77%;
+		min-height:800px;
 	}
 
 	#story,#whoiam
@@ -518,7 +388,6 @@ footer
 	padding-left: 1%;
 	color: rgba(228,228,228,1);
 	
-
 	animation: backgroundTransform;
 	animation-iteration-count: infinite;
 	animation-duration: 10s;
@@ -552,7 +421,7 @@ footer
 
 .floatimage
 {
-	border:1px grey ridge;
+	border:3px grey ridge;
 	float: left;
 	border-radius: 50px;
 	margin: 2%; 
@@ -561,9 +430,14 @@ footer
 .titleplan
 {
 	text-align:center;
-	margin-bottom: 2%; 
+	margin-bottom: 2%;
 }
 
+.introduce
+{
+	padding: 5%;
+	text-align: justify;
+}
 /*--------------------------------------------------Accueil page OVER####*/
 
 /*####Travaux page configuration
@@ -575,10 +449,6 @@ footer
 		width:250px;
 	}
 }
-
-
-
-
 
 .animationgif, .illuflash, .illusite
 {
@@ -614,6 +484,20 @@ footer
 	right: -30px;
 }
 
+.folio-title, .titleplan, .cvproverb
+{
+	font-family: 'Permanent Marker', cursive;
+}
+
+.dropdown-menu 
+{
+	background: linear-gradient(to top, rgba(12,42,55,0.8), black 40%, rgba(12,42,55,0.8) 75%, black);
+}
+
+.dropdown-menu li a
+{
+	color:white;
+}
 
 /*####CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -631,6 +515,15 @@ footer
   		width:300px;
 	}
 }
+
+@media (max-width: 767px) 
+{
+	#backgroundportfolio
+	{
+		padding-top: 55%;
+	}
+}
+
 @media (min-width: 768px) 
 {	
 	/* Bump up size of carousel content */
@@ -687,6 +580,11 @@ footer
 -------------------------------------------------- */
 @media (max-width: 767px) 
 {
+	#backgroundcv
+	{
+		padding-top: 55%;
+	}
+
 	.cvidentite a
 	{
 		margin-left: 25%;
@@ -737,12 +635,10 @@ footer
 		background: linear-gradient(to top, rgba(203,124,53,0.7), black 40%, rgba(203,124,53,0.7) 75%, black);
 	}
 
-.cvformation, .cvidentite, .cvcompetences, .cvexperience, .cvinteret, .cvcertifications
+.cvformation, .cvcompetences, .cvexperience, .cvinteret, .cvcertifications
 {
 	border-radius: 6px;
-
 	padding:2%;
-
 	margin-top: 2%;
 }
 
@@ -750,9 +646,10 @@ footer
 .cvformation h2, .cvidentite h2, .cvcompetences h2, .cvexperience h2, .cvinteret h2, .cvcertifications h2
 {
 	text-align: center;
-	border-bottom:2px rgb(12,42,55) ridge;
+	border-bottom:2px rgb(201, 205, 207) ridge;
 	padding-bottom: 10px;
 	text-shadow: 2px 2px 2px black;
+	font-family: 'Permanent Marker', cursive;
 }
 
 .cvexperience a
@@ -770,6 +667,9 @@ footer
 .cvidentite
 {
 	color:white;
+	border-radius: 6px;
+	padding:5%;
+	margin-top: 2%;
 }
 
 .cvpicture
@@ -807,9 +707,7 @@ footer
 
 .cvformation, .cvinteret, .cvcompetences, .cvexperience, .cvcertifications, .cvinteret
 {
-
 	color: rgba(228,228,228,1);
-	
 }
 
 .cvlegende
@@ -871,17 +769,40 @@ footer
 {
 	color : orange;
 }
+
+.modal-dialog
+{
+	width: 60%;
+	text-align: center;
+	text-shadow: 1px 1px 1px black;
+	line-height: 1.5em;
+}
+
+.modal-body
+{
+	margin: 5%;
+	text-align: justify;
+}
+
+.modal-content
+{
+	color: silver;
+	background: linear-gradient(to top, rgba(41,54,74,0.9), black 40%, rgba(41,54,74,0.9) 75%, black);
+}
 /*--------------------------------------------------Cv page OVER####*/
 
 /*####Contact page configuration
 -------------------------------------------------- */
 @media (max-width: 767px) 
 {
-	.contact
+	#backgroundcontact
 	{
 		background: linear-gradient(to top, rgba(41,54,74,0.6), black 40%, rgba(41,54,74,0.6) 75%, black);
+		height: 100%;
+		min-height:400px;
+		padding-top: 55%;
 	}
-	.contact address
+	address
 	{
 		margin-top: 20px;
 		margin-left: 15px;
@@ -890,32 +811,31 @@ footer
 
 @media (min-width: 768px) 
 {
-	.contact
+	#backgroundcontact
 	{
-		background: url("../img/backgroundcontact.jpg");
+		background: url("../img/backgroundcontact.jpg"), fixed no-repeat;
+		height: 100%;
+		min-height:900px;
 	}
-	.contact address
+
+	address
 	{
 		margin-top: 10%;
-		margin-left: 20%;px;
+		margin-left: 20%px;
 	}
 }
 
-.contact
-{
-	height: 100%;
-}
-
-.contact address
+address
 {
 	color:white;
 }
 
-.contact address h1
+address h1
 {
 	text-shadow: 2px 2px 2px black;
+	font-family: 'Permanent Marker', cursive;
 }
-.contact a
+#backgroundcontact a
 {
 	text-decoration: none;
 	color: gold;
@@ -923,7 +843,7 @@ footer
 	font-size: 16px;
 }
 
-.contact a:hover
+#backgroundcontact a:hover
 {
 	text-decoration: none;
 	color: purple;

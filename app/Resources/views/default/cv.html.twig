@@ -9,35 +9,25 @@
     <div class="disabled col-xs-1">&#9733; Mon CV</div>
 {% endblock %}
 
+{% block navanchor %}
+	<div class="btn-group hidden-xs"> 
+		<button class="navon dropdown-toggle" data-toggle="dropdown">Naviguer <span class="caret"></span></button>
+		<ul class="dropdown-menu">
+	  		<li><a href="#top"><span class="glyphicon glyphicon-user"></span> Identité</a></li>
+	  		<li><a href="#secondplan"><span class="glyphicon glyphicon-wrench"></span> Compétences</a></li>
+	  		<li><a href="#thirdplan"><span class="glyphicon glyphicon-briefcase"></span> Formations</a></li>
+	  		<li><a href="#fourthplan"><span class="glyphicon glyphicon-education"></span> Certifications</a></li>
+	  		<li><a href="#fifthplan"><span class="glyphicon glyphicon-globe"></span> Expériences</a></li>
+	  		<li><a href="#sixthplan"><span class="glyphicon glyphicon-knight"></span> Hobbies</a></li>
+		</ul>
+	</div>
+{% endblock %}
 
+{% block section %}
 
-{% block page %}
-<div class="navside">
-				<ul class="nav navbar-nav">
-					<li class="active">
-						<a href="#top">Identité</a>
-					</li>
-					<li class="active">
-						<a href="#secondplan">Compétences</a>
-					</li>
-					<li class="active">
-						<a href="#thirdplan">Formations</a>
-					</li>
-					<li class="active">
-						<a href="#fourthplan">Certifications</a>
-					</li>
-					<li class="active">
-						<a href="#fifthplan">Expériences</a>
-					</li>
-					<li class="active">
-						<a href="#sixthplan">Hobbies</a>
-					</li>
-				</ul>
-</div>
+	<article id="backgroundcv">	
 
-<article id="backgroundcv" class="col-xs-12">	
-
-<div class="row">
+	<div class="row">
 
 		<div class="col-lg-offset-1 col-lg-6 cvidentite">
 			<h2>IDENTITÉ</h2>
@@ -46,28 +36,29 @@
 				<img class="cvpicture"  src="{{ asset('img/illustrations/identite3.jpg') }}" alt="site R4ID">
 			</figure>
 
-				<br/>
+			<br/>
 			<div class="row">
-			<div class="cvid col-lg-6">
-			<span>Nom</span><p>Aurélien Theriot alias S7tH</p> <br/>
-			<span>Anniversaire</span><p>11 mai 1982</p> <br/>
-			<span>Adresse</span><p>Saint André les Vergers, France</p> <br/>
-			<span>Email</span><p>aurelien.theriot@gmail.com</p>
-			</div>
+				<div class="cvid col-lg-6">
+					<span>Nom</span><p>Aurélien Theriot alias S7tH</p> <br/>
+					<span>Anniversaire</span><p>11 mai 1982</p> <br/>
+					<span>Adresse</span><p>Saint André les Vergers, France</p> <br/>
+					<span>Email</span><p>aurelien.theriot@gmail.com</p>
+				</div>
 
-			<a href="{{ asset('downloads/CvTheriotA.jpg') }}" target="_blank" class="btn btn-primary btn-perso"><span class="glyphicon glyphicon-download-alt"></span> Télécharger mon CV</a>
-			<br/><br/><br/>
+				<a href="{{ asset('downloads/CvTheriotA.jpg') }}" target="_blank" class="btn btn-primary btn-perso"><span class="glyphicon glyphicon-download-alt"></span> Télécharger mon CV</a>
+				<br/><br/><br/>
 			
-			<span>Mon profil </span> <span class="glyphicon glyphicon-hand-right"></span>
-    		<a href="https://www.linkedin.com/in/aurelien-theriot-66178812a" target="_blank"> <img src="{{ asset('img/illustrations/linkedin-button-small.png') }}"  alt="Linkedin"/></a><br/><br/>
+				<span>Mon profil </span> <span class="glyphicon glyphicon-hand-right"></span> <span id="secondplan"></span>
+    			<a href="https://www.linkedin.com/in/aurelien-theriot-66178812a" target="_blank"> <img src="{{ asset('img/illustrations/linkedin-button-small.png') }}"  alt="Linkedin"/></a><br/><br/>
 
-    		<div class="certifang">
-    			Maîtrise de l'anglais sur Duolingo : <b style="color:orange">Avancé</b> (estimation)<br/><br/>
-    			<img class="icon" src="https://media.licdn.com/media/AAEAAQAAAAAAAAkZAAAAJDU2MTY0MWYyLTQzMjYtNGZhMC04NDc4LTYxZTAyMDZlMmM4Mw.png"/>
-    		</div>
+    			<div class="certifang">
+    				Maîtrise de l'anglais sur Duolingo : <b style="color:orange">Avancé</b> (estimation)<br/><br/>
+    				<img class="icon" src="https://media.licdn.com/media/AAEAAQAAAAAAAAkZAAAAJDU2MTY0MWYyLTQzMjYtNGZhMC04NDc4LTYxZTAyMDZlMmM4Mw.png"/>
+    			</div>
 			</div>
-	</div>
+		</div>
 		<span id="secondplan"></span>
+		<div class"row">
 		<div class="col-lg-offset-1 col-lg-10 cvcompetences">
 			<h2>COMPÉTENCES</h2>
 			<br/>
@@ -81,57 +72,49 @@
 			</div>
 
 			<div class="col-lg-5">
-			<h3>Logiciels Adobe</h3>
-			<ul>
-				<li><label>Photoshop</label><span class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span></li>
-				<li><label>Illustrator</label><span class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span></li>
-				<li><label>Dreamweaver *</label><span class="stars">&#9733;&#9733;&#9734;&#9734;&#9734;</span></li>
-				<li><label>Flash</label><span class="stars">&#9733;&#9733;&#9734;&#9734;&#9734;</span></li>
-			</ul>
-			<br/>
-			<h3>CMS</h3>
-			<ul>
-				<li><label>WordPress</label><span class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span></li>
-				<li><label>Prestashop</label><span class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span></li>
-			</ul>
-
-			<br/>
-			<h3>Terminal OS</h3>
-			<ul>
-				<li><label>GNU/Linux</label><span class="stars">&#9733;&#9733;&#9734;&#9734;&#9734;</span></li>
-			</ul>
-			
+				<h3>Langages</h3><span id="thirdplan"></span>
+				<ul>
+					<li><label>PHP/SQL</label><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span></li>
+					<li><label>HTML5/CSS3</label><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span></li>
+					<li><label>JavaScript</label><span class="stars">&#9733;&#9733&#9734;&#9734;&#9734;</span></li>
+					<li><label>JAVA</label><span class="stars">&#9733;&#9733;&#9734;&#9734;&#9734;</span></li>
+					<li><label>C++</label><span class="stars">&#9733;&#9734;&#9734;&#9734;&#9734;</span></li>
+				</ul>
+				<br/>
+				<h3>Logiciels Adobe</h3>
+				<ul>
+					<li><label>Photoshop</label><span class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span></li>
+					<li><label>Illustrator</label><span class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span></li>
+					<li><label>Dreamweaver</label><span class="stars">&#9733;&#9733;&#9734;&#9734;&#9734;</span></li>
+					<li><label>Flash</label><span class="stars">&#9733;&#9733;&#9734;&#9734;&#9734;</span></li>
+				</ul>
+				<br/>
+				<h3>CMS</h3>
+				<ul>
+					<li><label>WordPress</label><span class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span></li>
+					<li><label>Prestashop</label><span class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span></li>
+				</ul>
 			</div>
 
 			<div class="col-lg-offset-1 col-lg-6">
-			<h3>Langages</h3>
-			<ul>
-				<li><label>HTML5/CSS3</label><span class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span></li>
-				<li><label>JavaScript</label><span class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span></li>
-				<li><label>PHP/SQL</label><span class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span></li>
-				<li><label>JAVA</label><span class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span></li>
-			</ul>
-			<br/>
-			<h3>Framework</h3><span id="thirdplan"></span>
-			<ul>
-				<li><label>Symfony2</label><span class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span></li>
-				<li><label>Bootstrap</label><span class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span></li>
-				<li><label>Jquery</label><span class="stars">&#9733;&#9734;&#9734;&#9734;&#9734;</span></li>
-			</ul>
-			<h3>Autre</h3>
-			<ul>
-				<li><label>Git/GitHub</label><span class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span></li><br/>
-			</ul>
+				<h3>Framework</h3>
+				<ul>
+					<li><label>Symfony</label><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span></li>
+					<li><label>Bootstrap</label><span class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span></li>
+					<li><label>Jquery</label><span class="stars">&#9733;&#9734;&#9734;&#9734;&#9734;</span></li>
+				</ul>
+				<br/>
+				<h3>Autre</h3>
+				<ul>
+					<li><label>Git/GitHub</label><span class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span></li>
+					<li><label>GNU/Linux</label><span class="stars">&#9733;&#9734;&#9734;&#9734;&#9734;</span></li>
+				</ul>
 
-			<h6>*Je n'utilise jamais Dreamweaver, je crée mes sites en général avec Sublime text, Brackets, Eclipse...</h6>
-		
-			</div>
+				</div>
 
-			
-		
 		</div>
-
-</div>
+		</div>
+	</div>
 
 
 
@@ -143,37 +126,37 @@
 			<h2>FORMATIONS</h2>
 			<br/>
 			<ul>
-				
-					<li><b>2015-2016 : En cours => Chef de projet multimédia - Développement</b><br/>
-					Formation en autodidacte sur le site MOOC OpenClassRoom
-					pour décrocher un titre de niveau II enregistré au RNCP
-					et avoir le statut de Chef de projet multimédia - Développement.<br/>
-					Vous pouvez consulter les certificats obtenus sur mon profil Linkedin.</li>
+				<li><b>2016-Aujourd'hui : Développeur d'application PHP/Symfony</b><br/>
+				Formation OpenClassRooms diplômante titre de niveau II enregistré au RNCP.
+				(Formation achevée en attente du jury.)
+				</li>
 
-					<br/>
+				<br/>
+
+				<li><b>2015-2016 : Chef de projet multimédia - Développement</b><br/>
+				Suivit des cours en autodidacte sur le site MOOC OpenClassRooms</li><span id="thirdplan"></span>
+
+				<br/>
 					
-					<li><b>2014-2016 : WEB MASTER WEB DESIGNER</b><br/>
-					Cours suivis par le CNFDI (Centre National de Formation à Distance)<br/>
-					&#9745;<em> Obtention d'un Certificat WebMaster\WebDesigner avec mention très bien</em><br/>
-					<a href="{{ asset('downloads/webmaster-webdesigner.jpg') }}" target="_blank" class="btn btn-primary btn-perso"><span class="glyphicon glyphicon-eye-open"></span> Voir les cours étudiés</a> 
-					</li>
+				<li><b>2014-2016 : WEB MASTER WEB DESIGNER</b><br/>
+				Cours suivis par le CNFDI (Centre National de Formation à Distance)<br/>
+				&#9745;<em> Obtention d'un Certificat WebMaster\WebDesigner avec mention très bien</em>
+				</li>
 					
-					<br/>
+				<br/>
 					
-					<li><b>2008 : SÉCURITÉ </b><br/><span id="fourthplan"></span>
-					École de Police a l'ENP de Reims<br/>
+				<li><b>2008 : SÉCURITÉ </b><br/><span id="fourthplan"></span>
+				École de Police a l'ENP de Reims<br/>
 	
+				<br/>
 					
-					<br/>
+				<li><b>2003 : COMMUNICATION GRAPHIQUE</b><br/>
+				École GUTENBERG à Illkirch-Graffenstaden (STRASBOURG)<br/></li>
 					
-					<li><b>2003 : COMMUNICATION GRAPHIQUE</b><br/>
-					École GUTENBERG à Illkirch-Graffenstaden (STRASBOURG)<br/></li>
+				<br/>
 					
-					<br/>
-					
-					<li><b>2001 : INDUSTRIE GRAPHIQUE</b><br/>
-					Lycée des Lombards à TROYES<br/>
-					
+				<li><b>2001 : INDUSTRIE GRAPHIQUE</b><br/>
+					Lycée des Lombards à TROYES<br/></li>	
 			</ul>
 		</div>
 
@@ -285,7 +268,7 @@
     	
 
 
-    		<a href="https://openclassrooms.com/course-certificates/2573459815" target="_blank" class="btn btn-primary btn-perso"><span id="fifthplan"></span>
+    		<a href="https://openclassrooms.com/course-certificates/2573459815" target="_blank" class="btn btn-primary btn-perso">
     			<div class="certif">
     				<b style="color:orange">Gérez votre code avec Git et GitHub</b><br/><br/>
     				OpenClassrooms<br/>
@@ -295,7 +278,7 @@
 
     		<a href="https://openclassrooms.com/courses/gerer-son-code-avec-git-et-github" target="_blank" class="btn btn-sm btn-warning"><span class="glyphicon glyphicon-send"></span></a>
 
-    		<a href="https://openclassrooms.com/course-certificates/2932794430" target="_blank" class="btn btn-primary btn-perso"><span id="fifthplan"></span>
+    		<a href="https://openclassrooms.com/course-certificates/2932794430" target="_blank" class="btn btn-primary btn-perso">
     			<div class="certif">
     				<b style="color:orange">Découvrez les bases de la gestion de projet</b><br/><br/>
     				OpenClassrooms<br/>
@@ -305,7 +288,7 @@
 
     		<a href="https://openclassrooms.com/courses/decouvrez-les-bases-de-la-gestion-de-projet" target="_blank" class="btn btn-sm btn-warning"><span class="glyphicon glyphicon-send"></span></a>
 
-    		<a href="https://openclassrooms.com/course-certificates/5517297557" target="_blank" class="btn btn-primary btn-perso"><span id="fifthplan"></span>
+    		<a href="https://openclassrooms.com/course-certificates/5517297557" target="_blank" class="btn btn-primary btn-perso">
     			<div class="certif">
     				<b style="color:orange">Découper et intégrer une maquette</b><br/><br/>
     				OpenClassrooms<br/>
@@ -324,35 +307,168 @@
     		</a>
 
     		<a href="https://openclassrooms.com/courses/prenez-en-main-bootstrap" target="_blank" class="btn btn-sm btn-warning"><span class="glyphicon glyphicon-send"></span></a>
-    		
+			
+			<a href="https://openclassrooms.com/course-certificates/1159626506" target="_blank" class="btn btn-primary btn-perso"><span id="fifthplan"></span>
+    			<div class="certif">
+    				<b style="color:orange">Testez et suivez l'état de votre application PHP</b><br/><br/>
+    				OpenClassrooms<br/>
+    				<img class="icon" src="https://media.licdn.com/media/p/3/005/08c/08b/12e7eea.png"/>
+    			</div>
+    		</a>
+
+    		<a href="https://openclassrooms.com/courses/testez-et-suivez-l-etat-de-votre-application-php" target="_blank" class="btn btn-sm btn-warning"><span class="glyphicon glyphicon-send"></span></a>
+			
+			<a href="https://openclassrooms.com/course-certificates/2538340864" target="_blank" class="btn btn-primary btn-perso"><span id="fifthplan"></span>
+    			<div class="certif">
+    				<b style="color:orange">Testez fonctionnellement votre application Symfony</b><br/><br/>
+    				OpenClassrooms<br/>
+    				<img class="icon" src="https://media.licdn.com/media/p/3/005/08c/08b/12e7eea.png"/>
+    			</div>
+    		</a>
+
+    		<a href="https://openclassrooms.com/courses/testez-fonctionnellement-votre-application-symfony" target="_blank" class="btn btn-sm btn-warning"><span class="glyphicon glyphicon-send"></span></a>
+			
+			<a href="https://openclassrooms.com/course-certificates/3508479625" target="_blank" class="btn btn-primary btn-perso"><span id="fifthplan"></span>
+    			<div class="certif">
+    				<b style="color:orange">Maintenez-vous à jour en développement</b><br/><br/>
+    				OpenClassrooms<br/>
+    				<img class="icon" src="https://media.licdn.com/media/p/3/005/08c/08b/12e7eea.png"/>
+    			</div>
+    		</a>
+
+    		<a href="https://openclassrooms.com/courses/maintenez-vous-a-jour-en-developpement" target="_blank" class="btn btn-sm btn-warning"><span class="glyphicon glyphicon-send"></span></a>
+
 		</div>
 
 		<div class="col-lg-offset-1 col-lg-10 cvexperience">
 			
-			<h2>EXPÉRIENCE</h2>
+			<h2>EXPÉRIENCE</h2><span id="sixthplan"></span>
 			<br/>
 			<ul>
-				<li><b>2014 - 2016 : <br/> DEV Fullstack </b>
+				<li><b>2014 - 2017 : <br/> Développeur/intégrateur Web </b>
 				<br/>
 				Ma principale expérience, est celle que je me forge en pratiquant chaque jour des leçons et exercices tout particulièrement sur le site OpenClassRoom.
 				<br><br>
 				Grâce à cette communauté j'ai acquis de bonnes méthodes de travail et un goût prononcé pour l'apprentissage.
 				Motivé, plein de volonté et de persévérance, j'ai aujourd'hui atteint un objectif qui me semblait autrefois compliqué, comprendre et manipuler des langages informatiques.
 				<br/><br>
-				Pour exemple, voici mon premier site dynamique en PHP SQL HTML5 CSS3 et JavaScript au notepad++ 
-				de manière procédural pour une petite équipe en ligne.
-				<br/>voici l'adresse : <a href="http://r4id.atspace.eu/" title="Lien du site R4ID" target="_blank">TEAM R4ID</a><br/><span id="sixthplan"></span>
-				<p>Ou encore mon profil GitHub. <a href="https://github.com/s7th" target="_blank"><img src="{{ asset('bundles/bootstrap/images/github.png') }}"  alt="GitHub"/></a></p></li>
-
-
+				<h5>Ma formation de développeur d'application au sein d'Openclassrooms m'a appris les compétences suivantes dans l'ordre:
+						<button data-toggle="modal" href="#comp" class="btn btn-primary btn-perso"><span class="glyphicon glyphicon-eye-open"></span> Voir les acquis</button>
+						<div class="modal" id="comp">
+						  <div class="modal-dialog">
+							<div class="modal-content">
+							  <div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">x</button>
+								<h4 class="modal-title">Compétences acquises par la formation Openclassrooms</h4>
+							  </div>
+							  <div class="modal-body">
+									<ol>
+											<li>Sélectionner un thème Wordpress adapté aux besoins du client</li>
+											<li>Adapter un thème Wordpress pour respecter les exigences du client</li>
+											<li>Rédiger une documentation à l'intention d'utilisateurs non spécialistes</li>
+											<li>Analyser un cahier des charges</li>
+											<li>Choisir une solution technique adaptée parmi les solutions existantes si cela est pertinent</li>
+											<li>Rédiger les spécifications détaillées du projet</li>
+											<li>Lister les fonctionnalités demandées par un client</li>
+											<li>Réaliser un schéma de conception de la base de données de l’application</li>
+											<li>Concevoir l’architecture technique d’une application à l’aide de diagrammes UML</li>
+											<li>Implémenter le schéma de données dans la base</li>
+											<li>Choisir une solution technique adaptée parmi les solutions existantes si cela est pertinent</li>
+											<li>Gérer ses données avec une base de données</li>
+											<li>Créer une page web permettant de recueillir les informations saisies par un internaute</li>
+											<li>Estimer une tâche et tenir les délais</li>
+											<li>Créer et maintenir l’architecture technique du site</li>
+											<li>Rédiger les spécifications détaillées du projet</li>
+											<li>Analyser un cahier des charges</li>
+											<li>Conceptualiser l'ensemble de son application en décrivant sa structure (Entités / Domain Objects)</li>
+											<li>Sélectionner les langages de programmation adaptés pour le développement de l’application</li>
+											<li>Développer une application proposant les fonctionnalités attendues par le client</li>
+											<li>Gérer une base de données MySQL avec Doctrine</li>
+											<li>Organiser son code pour garantir la lisibilité et la maintenabilité</li>
+											<li>Prendre en main le framework Symfony</li>
+											<li>Prendre en main le moteur de templating Twig</li>
+											<li>Respecter les bonnes pratiques de développement en vigueur</li>
+											<li>Produire une documentation technique</li>
+											<li>Exposer une API REST avec Symfony</li>
+											<li>Lancer une authentification à chaque requête HTTP</li>
+											<li>Analyser la qualité de code et la performance d’une application
+											<li>Produire un rapport de l’exécution des tests</li>
+											<li>Fournir des patchs correctifs lorsque les tests le suggèrent</li>
+											<li>Lire et retranscrire le fonctionnement d’un morceau de code écrit par d’autres développeurs</li>
+											<li>Implémenter de nouvelles fonctionnalités au sein d’une application déjà initiée en suivant un plan de collaboration clair</li>
+											<li>Mettre en oeuvre des tests unitaires et fonctionnels</li>
+											<li>Établir un plan pour réduire la dette technique d’une application</li>
+										</ol>
+							  </div>
+							</div>
+						  </div>
+						</div>
+				</h5>
+				<br/>
+				<h5>Ma formation de Web Master/Designer m'a apporté les connaissances suivantes :
+						<button data-toggle="modal" href="#cours" class="btn btn-primary btn-perso"><span class="glyphicon glyphicon-eye-open"></span> Voir les cours étudiés</button>
+						<div class="modal" id="cours">
+						  <div class="modal-dialog">
+							<div class="modal-content">
+							  <div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">x</button>
+								<h4 class="modal-title">Cours étudiés lors de la formation CNFDI</h4>
+							  </div>
+							  <div class="modal-body">
+									I - Le graphisme pour le web (5 tomes)
+									<br/>
+									<br/>1 - A la découverte de Photoshop (fourni avec le logiciel PHOTOSHOP CS6  version Education)
+									<br/>2 - Initiation à Photoshop
+									<br/>3 - Photoshop – Perfectionnement  
+									<br/>4 - Photoshop – Expertise  
+									<br/>5 - Illustrator CS6 (fourni avec le logiciel ILLUSTRATOR CS6  version Education)  
+									<br/>
+								   II - Les techniques de développement et d’animation pour le web (23 tomes) 
+								   <br/>
+								   <br/>6 - 7 - 8  Le langage HTML (3 tomes) : HTML et multimédia (cours livré avec un CD de travail), sons et animations sur le Web et VRML  
+								   <br/> 9 - Dreamweaver CS6 : module 1 (cours livré avec le logiciel Dreamweaver CS6 version Éducation) 
+								   <br/>10 & 11 - Dreamweaver CS6 : module 2 (2 tomes) 
+								   <br/>12 - Dreamweaver CS6 : module 3 
+								   <br/>13 - Grille fluide et transitions CSS3 avec Dreamweaver CS6 
+								   <br/>14 - Le langage JavaScript 
+								   <br/>15 - A la découverte de Flash  (cours livré avec le logiciel Flash CS6 version Éducation) 
+								   <br/>16 - 17 - 18 Flash (3tomes) – Initiation, Perfectionnement, Expertise 
+								   <br/>19 - Le langage JAVA : (cours livré avec un CD de travail) 
+								   <br/>20 - Les bases de données Access 
+								   <br/>21 & 22 - ASP (tome 1et 2) 
+								   <br/>23 & 24 - PHP (2 tomes) : Découvrir PHP - Aller plus loin avec PHP  
+								   <br/>25 & 26 - PHP et MySQL (2 tomes) 
+								   <br/>27 - Bases de données et MySQL 
+								   <br/>28 - Microsoft Expression Web  
+								   <br/>
+								   III - E-business (13 tomes) 
+								   <br/>
+								   <br/>29 - L’hébergement mutualisé sur IIS & Apache  
+								   <br/>30 - L’hébergement dédié sur serveur Apache & IIS  
+								   <br/>31 - Présentation du E-commerce  32 - OS commerce  
+								   <br/>33 - La création d’une boutique en ligne  
+								   <br/>34 - La création de sites de personnalisation, d’articles en ligne  
+								   <br/>35 - Communication vidéo     
+								   <br/>36 - Introduction au référencement  
+								   <br/>37 - Généralités juridiques liées à internet  
+								   <br/>38 - Publicité et marketing internet   
+								   <br/>39 - Paiement sécurisé en ligne 
+								   <br/>40 - La Gestion de la Relation Client (GRC) ou Customer Relationship Management (CRM)  
+								   <br/>41 - La gestion des contacts & les campagnes e-mailing via Outlook  
+							  </div>
+							</div>
+						  </div>
+						</div>
+				</h5>
+				<br/>
+				Vous pouvez retrouver également mes projets réalisés détaillés sur <a href="https://www.linkedin.com/in/aurelien-theriot-66178812a" target="_blank"> Linkedin</a><br/>
+				où encore dans la partie <a href="{{ path('portfolio') }}">Travaux</a> de ce site<br/>
+				le tout sur mon profil <a href="https://github.com/s7th" target="_blank"><img src="{{ asset('bundles/bootstrap/images/github.png') }}"  alt="GitHub"/></a></p></li>
 				
 				<br/>
-
-				
 				<li><b>01/2008 - 08/2014 :<br/> AGENT DE POLICE NATIONALE</b><br/>
 				J'y ai acquis le sens de l'ordre, de la hiérarchie et des responsabilités en tant qu'agent de terrain en Police secours, agent au service d'accueil du public, agent d'escorte de détenus au tribunal ou encore en traitant des dossiers en bureau de Police. Dans ce métier comme tant d'autres il faut savoir être réactif tout en prenant les bonnes décisions.</li>
 			</ul>
-
 		</div>
 </div>
 <br/>
@@ -391,4 +507,3 @@
 
 	</article>	
 {% endblock %}
-
