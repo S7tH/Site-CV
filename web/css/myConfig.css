@@ -361,7 +361,7 @@ footer
 		min-height:800px;
 	}
 
-	#story,#whoiam
+	#story,#whoiam,#thanks
 	{
 		border-top: 2px silver ridge;
 		border-bottom: 2px silver ridge;
@@ -381,7 +381,7 @@ footer
 }
 
 
-#story,#whoiam
+#story,#whoiam,#thanks
 {
 	border-radius: 16px;
 	padding-right: 1%;
@@ -397,15 +397,20 @@ footer
 
 
 #story p:hover,
-#whoiam p:hover
+#whoiam p:hover,
+#thanks p:hover
 {
 	text-shadow: 1px 1px 8px rgba(178,243,245,0.6);
 	color : rgba(178,243,245,0.9);
 	cursor: pointer;
 }
 
+#thanks a
+{
+	color: yellowgreen;
+}
 
-#story h1 ,#whoiam  h1
+#story h1 ,#whoiam  h1, #thanks h1
 {
 	font-weight:bold;
 	animation: titleTrans;
@@ -503,14 +508,23 @@ footer
 -------------------------------------------------- */
 @media (max-width: 360px) 
 {
-	.carousel 
+	.siteCarousel
+	{
+		width:260px;
+	}
+
+	.img1Carousel, .img2Carousel
 	{
   		width:260px;
 	}
 }
 @media (min-width: 361px) 
 {
-	.carousel 
+	.siteCarousel
+	{
+		width:560px;
+	}
+	.img1Carousel, .img2Carousel
 	{
   		width:300px;
 	}
